@@ -1,0 +1,46 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type PlaceModel {
+  id: Int!
+  name: String!
+  description: String!
+  location: String!
+  latitude: Float!
+  longitude: Float!
+  openHours: String!
+  images: [String]
+}
+
+type Query {
+  places: [PlaceModel!]!
+  place(id: Int!): PlaceModel!
+}
+
+type Mutation {
+  createPlace(createPlaceInput: CreatePlaceInput!): PlaceModel!
+  updatePlace(updatePlaceInput: UpdatePlaceInput!): PlaceModel!
+  removePlace(id: Int!): Boolean!
+}
+
+input CreatePlaceInput {
+  name: String!
+  description: String!
+  location: String!
+  latitude: Float!
+  longitude: Float!
+  openHours: String!
+  images: [String]
+}
+
+input UpdatePlaceInput {
+  name: String
+  description: String
+  location: String
+  latitude: Float
+  longitude: Float
+  openHours: String
+  images: [String!]
+  id: Int!
+}
