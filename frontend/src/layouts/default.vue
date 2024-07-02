@@ -1,3 +1,8 @@
+<script setup lang="ts">
+
+
+</script>
+
 <template>
     <div>
       <nav class="bg-gray-800 p-4">

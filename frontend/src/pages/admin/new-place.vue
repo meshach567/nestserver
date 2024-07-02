@@ -1,7 +1,7 @@
 <template>
     <div class="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-md">
       <h2 class="text-2xl font-bold mb-4">Create New Place</h2>
-      <form @submit.prevent="handleCreatePlace">
+      <form v-on:submit="handleCreatePlace">
         <div class="mb-4">
           <label class="block text-gray-700">Name</label>
           <input v-model="name" type="text" class="w-full p-2 border border-gray-300 rounded mt-1" required />
